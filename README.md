@@ -8,6 +8,7 @@ MainActivity.java完成欢迎界面
 MyService.java完成后台调度
 * 多线程完成录音/特征提取/神经网络前向的同步
 * 队列结构实现数据调度同步
+
 ##JNI
 JNI-NDK实现特征提取代码
 同wake-up-pc
