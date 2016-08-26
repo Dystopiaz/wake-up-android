@@ -24,7 +24,7 @@
         </activity>
 
         <service
-            android:name=".MyService"
+            android:name="nwpu_aslp.wakeup.MyService"
             android:enabled="true"
             android:process="system"
             android:exported="true"></service>
