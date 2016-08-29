@@ -70,7 +70,8 @@ public class MyService extends Service {
                 audio_queue.put(sumbuffer);
             }
         } catch (Throwable t) {
-            Toast.makeText(MyService.this, "录音失败", Toast.LENGTH_SHORT).show();
+            Log.v("录音失败"+t.toString());
+            System.out.println("录音失败"+t.toString());
         }
     }
 
@@ -106,7 +107,8 @@ public class MyService extends Service {
                 }
             }
         } catch (Throwable t) {
-            Toast.makeText(MyService.this, t.toString() + "播放失败", Toast.LENGTH_SHORT).show();
+            Log.v("特征计算失败"+t.toString());
+            System.out.println("特征计算失败"+t.toString());
         }
     }
 
@@ -185,7 +187,8 @@ public class MyService extends Service {
                 }
             }
         } catch (Throwable t) {
-            Toast.makeText(MyService.this, t.toString() + "dnn出错", Toast.LENGTH_SHORT).show();
+            Log.v("DNN失败"+t.toString());
+            System.out.println("DNN失败"+t.toString());
         }
     }
 
