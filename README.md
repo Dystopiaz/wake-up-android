@@ -13,3 +13,8 @@ MyService.java完成后台调度
 JNI-NDK实现特征提取代码
 同wake-up-pc
 JNI-NDK实现神经网络前向
+
+2018/12/12
+此项目阻塞队列存在bug，建议仅参考wake-up-pc与唤醒流程，即
+* wake-up-pc内容：JNI部分，提取整理自HTK
+* 阻塞队列实现唤醒数据同步
